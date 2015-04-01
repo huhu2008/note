@@ -13,12 +13,16 @@ File 2: /home/bluelife/.gradle/caches/modules-2/files-2.1/org.apache.httpcompone
 需要在build.gradle文件里添加如下配置：
 
 android {
+
     packagingOptions {
+    
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
+        
     }
     // ...
+    
 }
