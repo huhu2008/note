@@ -26,3 +26,25 @@ android {
     // ...
     
 }
+
+2015/4/3
+
+Picasso缓存路径
+
+
+PICASSO_CAcHCE="picasso-cache";
+
+public static File createDefaultCacheDir(Context context){
+
+
+   File cache = new File (context.getApplicationContext().getCatcheDir(),PICASSO_CACHE);
+   
+   if(cathce.exists()){
+   
+     cachce.mkdirs();
+   }
+
+  return cache;
+}
+
+
