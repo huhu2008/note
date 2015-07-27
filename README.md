@@ -50,3 +50,4 @@ public static File createDefaultCacheDir(Context context){
  }
 
 
+面试题集合 http://www.apkbus.com/android-115989-1-1.html
