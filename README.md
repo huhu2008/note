@@ -66,3 +66,8 @@ http://www.doc88.com/p-2035575757579.html
             mbody= mbody.replace(matcher.group(),"<a href=" + matcher.group() + ">链接>></a>");
 
         }
+        
+
+给Textview添加超链接的几种方法
+
+http://blog.sina.com.cn/s/blog_7cd0c0a801014o5b.html
