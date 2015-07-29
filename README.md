@@ -52,3 +52,17 @@ public static File createDefaultCacheDir(Context context){
 
 面试题集合 http://www.apkbus.com/android-115989-1-1.html
 http://www.doc88.com/p-2035575757579.html
+
+查找字符串中的url
+
+ Pattern pattern=Pattern.compile("(http://|ftp://|https://|www){0,1}[^\u4e00-\u9fa5\\s]*?\\.(com|net|cn|me|tw|fr)[^\u4e00-\u9fa5\\s]*");
+
+        Matcher matcher=pattern.matcher(mbody);
+
+        while  (matcher.find()){
+
+            HttpLog.Log("扫描结果为网址！" + matcher.group());
+
+            mbody= mbody.replace(matcher.group(),"<a href=" + matcher.group() + ">链接>></a>");
+
+        }
