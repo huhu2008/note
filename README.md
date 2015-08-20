@@ -1,6 +1,8 @@
 # note
 记录工作问题
 
+SDK下载地址：http://mirrors.neusoft.edu.cn/android/repository/
+
 今天上传文件的时候用了MultipartEntityBuilder，添加了httpcore等2个依赖库，编译运行的时候，studio出现一个奇怪的错误提示：
 
 Duplicate files copied in APK META-INF/DEPENDENCIES
