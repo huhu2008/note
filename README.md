@@ -73,3 +73,14 @@ http://www.doc88.com/p-2035575757579.html
 给Textview添加超链接的几种方法
 
 http://blog.sina.com.cn/s/blog_7cd0c0a801014o5b.html
+
+AsyncHttpClient  用https方式：
+
+
+
+       client = new AsyncHttpClient();
+        // using a socket factory that allows self-signed SSL certificates.
+        client.setSSLSocketFactory(MySSLSocketFactory.getFixedSocketFactory());
+        client.get("https://apollo.localnet:9292/", new AsyncHttpResponseHandler() {
+           ....
+        }
