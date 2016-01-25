@@ -84,3 +84,5 @@ AsyncHttpClient  用https方式：
         client.get("https://apollo.localnet:9292/", new AsyncHttpResponseHandler() {
            ....
         }
+        
+        http://download.csdn.net/download/fuyanai/9088575
