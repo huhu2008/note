@@ -86,3 +86,20 @@ AsyncHttpClient  用https方式：
         }
         
         http://download.csdn.net/download/fuyanai/9088575
+        
+        
+        
+ 
+android 7.0系统解决拍照的问题:
+
+
+除了解决方案之外FileProvider，还有另一种解决方法。简单的说
+
+StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+StrictMode.setVmPolicy(builder.build());
+在Application.onCreate()。以这种方式，VM会忽略文件URI曝光。
+
+方法
+
+builder.detectFileUriExposure()
+启用文件曝光检查，如果我们没有设置VmPolicy，这也是默认行为。
